@@ -1,0 +1,42 @@
+# _config.yml
+
+# Basic Site Settings
+title: "Daniel Carstensen"             # Title of your website
+description: "A personal website showcasing my research interests, publications, and CV."
+url: "https://danielcarstensen.com"     # Replace with your actual GitHub Pages URL
+baseurl: ""                               # Leave empty if site is published at the root
+theme: minima                             # Using the minima theme for a clean, responsive design
+
+# Plugins (whitelisted by GitHub Pages)
+plugins:
+  - jekyll-feed      # Generates an Atom feed for your posts
+  - jekyll-seo-tag   # Enhances SEO with meta tags on your pages
+  - jekyll-sitemap   # Automatically generates a sitemap.xml
+
+# Time zone configuration (update to your local time zone)
+timezone: "America/New_York"
+
+# Permalink style for clean URLs
+permalink: pretty
+
+# Exclude files and directories that should not be processed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Feed configuration: limit the number of posts in your feed (adjust as needed)
+feed:
+  limit: 10
+
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""        # Applies to all files in the project
+      type: "pages"   # Targets standalone pages (e.g., about, contact, cv)
+    values:
+      layout: default
+
+# Note: For your CV page, simply create a page (e.g., cv.md or cv.html) that links to your cv.pdf.
