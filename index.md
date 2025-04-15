@@ -9,9 +9,7 @@ title: Home
 <div class="content-layout">
   <div class="main-content">
     <p>Hello! I am a researcher at the intersection of cognitive science, neuroscience, and machine learning. Currently, I am working as a Lab Manager and Research Assistant at the Favila Lab at Brown University, where I investigate how deep neural network embedding spaces align with Shepard's universal law of generalization.</p>
-
-    <p>My background combines mathematical data science, computer science, and cognitive neuroscience. I graduated from Dartmouth College with a B.A. in Mathematical Data Science.</p>
-
+    
     <p>My research focuses on:</p>
     <ul>
       <li>Applying computational modeling, especially deep learning, to cognitive neuroscience</li>
@@ -22,18 +20,14 @@ title: Home
 
     <p>I use frameworks such as Shepard's universal law of generalization as tools to better understand these cognitive phenomena. Ultimately, my goal is to bridge insights from cognitive science, neuroscience, and artificial neural networks to clarify how the brain supports complex cognition.</p>
 
-    <h2>Contact Information</h2>
-
-    <p>Feel free to reach out to me at:</p>
-
-    <ul>
-      <li>Email: <a href="mailto:daniel_carstensen@brown.edu">daniel_carstensen@brown.edu</a></li>
-      <li>Address: Brown University, Cognitive and Psychological Sciences, 190 Thayer Street, Providence, RI 02912, USA</li>
-    </ul>
-
     <p>Thank you for visiting!</p>
   </div>
   <div class="portrait-column">
     <img src="/assets/images/carstensen_current_comp.jpeg" alt="Daniel Carstensen" class="portrait">
+    <div class="social-icons">
+      <a href="mailto:daniel_carstensen@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/daniel-carstensen" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://bsky.app/profile/daniel-carstensen.bsky.social" title="Bluesky"><i class="fab fa-bluesky"></i></a>
+    </div>
   </div>
 </div>

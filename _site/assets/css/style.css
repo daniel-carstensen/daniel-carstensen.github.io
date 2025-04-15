@@ -171,12 +171,45 @@ a:hover {
 .portrait-column {
   width: 22%;
   padding-top: 30px; /* Align portrait with some spacing from top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portrait {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #2a7ae2;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 /* Footer */
@@ -325,6 +358,10 @@ a:hover {
   
   .portrait {
     max-width: 60%;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 
   /* Animation for menu items */
