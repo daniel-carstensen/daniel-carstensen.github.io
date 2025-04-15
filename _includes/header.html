@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+            {% if page.url != '/' %}
+            <a class="site-title" href="/">Daniel Carstensen</a>
+            {% else %}
+            <a class="site-title empty-title" href="/"></a>
+            {% endif %}
+            
+            <div class="menu-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="site-nav" id="siteNav">
+                <div class="trigger">
+                    <a class="page-link" href="/">Home</a>
+                    <a class="page-link" href="/publications">Publications</a>
+                    <a class="page-link" href="/cv">CV</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menuIcon');
+            const siteNav = document.getElementById('siteNav');
+            
+            menuIcon.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event bubbling
+                this.classList.toggle('active');
+                siteNav.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!menuIcon.contains(event.target) && !siteNav.contains(event.target)) {
+                    menuIcon.classList.remove('active');
+                    siteNav.classList.remove('active');
+                }
+            });
+            
+            // Prevent clicks inside the menu from closing it
+            siteNav.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>

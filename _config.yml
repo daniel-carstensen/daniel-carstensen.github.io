@@ -1,0 +1,27 @@
+title: Daniel L. Carstensen
+description: Personal website of Daniel L. Carstensen, showcasing research in cognitive science, neuroscience, and machine learning.
+baseurl: "" # Keep empty for username.github.io
+url: "https://danielcarstensen.com" 
+markdown: kramdown
+theme: minima
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Exclude files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CV.txt
+
+# Author information
+author:
+  name: Daniel L. Carstensen
+  email: daniel_carstensen@brown.edu
+
+# Social media links (optional)
+social:
+  github: https://github.com/daniel-carstensen
+  linkedin: https://linkedin.com/in/daniel-l-carstensen

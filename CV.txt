@@ -1,0 +1,226 @@
+Daniel L. Carstensen
+Brown University
+Cognitive and Psychological Sciences
+190 Thayer Street, Providence, RI 02912, USA
+daniel_carstensen@brown.edu
+danielcarstensen.com
+
+Education
+Sep 2020 – Jun
+2024
+
+Dartmouth College, Hanover, NH, USA
+
+Sep 2011 – Jun
+2019
+
+Maximiliansgymnasium München, Munich, Germany
+
+B.A. in Mathematical Data Science with High Honors, Minor in CS
+GPA: 3.97, Summa cum Laude, Phi Beta Kappa
+Thesis: Translating EEG recordings into dynamic estimates of conceptual
+knowledge and learning (Advisors: Jeremy Manning and Peter Mucha)
+
+Abitur
+
+Research Experience
+Aug 2024 –
+Present
+
+Lab Manager and Research Assistant, Favila Lab
+
+Feb 2024 –
+Present
+
+Research Assistant, Dartmouth Lab for Mind, Brain, and Computation
+
+Jan 2021 –
+Present
+
+Research Assistant, Contextual Dynamics Lab
+
+Brown University, Department of Cognitive and Psychological Sciences (PI:
+Serra Favila)
+Details: Investigating the adherence of DNN embedding spaces to Shepard’s universal law of generalization using large-scale naturalistic image
+datasets.
+
+Dartmouth College, Department of Cognitive Science (PI: Steven Frankland)
+Details: Collaborator on project investigating Shepard’s law in DNNs (see
+above).
+
+Dartmouth College, Department of Psychological and Brain Sciences (PI:
+Jeremy Manning)
+
+1
+
+Details: Used EEG to dynamically estimate conceptual knowledge during
+learning, leading a team of 3 RAs. Evaluated higher-order correlations for
+time-series forecasting (stock/fMRI data).
+Apr 2024 – Apr
+2025
+
+Research Assistant, Venkatesh Lab
+
+Jan 2023 – Sep
+2024
+
+Research Assistant, Minds, Machines, and Society Group
+
+Jun 2022 – Sep
+2022
+
+Research Assistant
+
+Brigham and Women’s Hospital and Harvard Medical School (PI: Humsa
+Venkatesh)
+Details: Analyzed novel ECoG recordings of neuronal activity from skin
+tumors in mice.
+
+Dartmouth College, Department of Computer Science (PI: Soroush
+Vosoughi; External Advisor: Asha Zimmerman, MD)
+Details: Applied ML/DL to predict organ transplant compatibility using
+DonorNet data.
+
+Dartmouth College, Department of Mathematics (PI: Yoonsang Lee)
+Details: Optimized network structure of a two-level physics-informed
+neural network (PINN) to accelerate convergence for approximating highfrequency components of Fourier feature embedded PDEs.
+
+Conference Presentations
+†denotes equal contribution
+
+Posters
+Carstensen, D. L., †Frankland, S. M., & †Favila, S. E. (Apr 2025). Generalization Gradients in Deep
+Vision Models: Insights from Shepard’s Universal Law of Generalization. Poster at Cognitive Neuroscience Society, Boston, MA.
+Carstensen, D. L., Manning, J. R., & Mucha, P. (May 2024). Translating Neurophysiological Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning. Poster at Wetterhahn Science
+Symposium.
+†Jha, K., †Carstensen, D. L., Patel, A., & Manning, J. R.(May 2023). Translating Neurophysiological
+Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning. Poster at Wetterhahn
+Science Symposium.
+
+Talks
+2025
+
+Lab meeting (PI: Thomas Serre), Brown University, Providence, RI.
+
+2
+
+Honors, Awards, and Scholarships
+Jul 2024
+Jun 2024
+Jan – Jun 2024
+Sep – Nov 2023
+Aug 2023
+Mar – Jun 2023
+Apr 2023
+Jan – Mar 2023
+Feb 2022
+Jun 2022
+Jul 2022
+Mar – Jun 2022
+Jan – Mar 2022
+Sep – Nov 2021
+Jul 2021
+Jun 2019
+
+Rufus Choate Scholar, awarded to the top 5% of all students of the previous academic year.
+Randolph and Christine Burnley Bucklin Prize at the Undergraduate Poster Session
+of Dartmouth’s Department of Mathematics.
+Lovelace Scholar, two-term funded research scholarship: $2,400.
+Neukom Scholar, one-term funded research scholarship: $1,200.
+3rd Honors Group, awarded to the top 35% of all students of the previous academic year.
+URAD Scholar, one-term funded research scholarship: $1,200.
+Citation for Academic Excellence in Computer Vision (CS83).
+URAD Scholar, one-term funded research scholarship: $1,200.
+Citation for Academic Excellence in Artificial Intelligence (CS76).
+2nd Honors Group, awarded to the top 15% of all students of the previous academic year.
+Citation for Academic Excellence in Machine Learning and Statistical Data Analysis
+(CS74).
+URAD Scholar, one-term funded research scholarship: $1,000.
+URAD Scholar, one-term funded research scholarship: $1,000.
+URAD Scholar, one-term funded research scholarship: $1,000.
+Rufus Choate Scholar, awarded to the top 5% of all students of the previous academic year.
+German Physical Society Abiturprize with distinction, awarded to the topperforming student in physics of a graduating class.
+
+Professional Experience
+Sep 2022 – Jun
+2024
+
+Data Scientist, DALI Lab, Dartmouth College, Hanover, NH, USA
+Roles: Data Team Lead (Mar 2023 – Jun 2024), Data Science Mentor (Nov 2022 –
+Jun 2024), Member (Sep 2022 - Nov 2022)
+Details: Led data team operations, project sourcing, hiring, and mentorship. Developed computer vision models for barnacle identification in NPS project (see
+here).
+
+Jun 2023 – Sep
+2023
+
+Jun 2022 – Sep
+2022
+
+Data and Analytics Intern, Upvest GmbH, Berlin, Germany
+Details: Built custom Jupyter Docker image with CI/CD deployment via Github Actions to GCP. Optimized Python trading simulation for time efficiency. Streamlined
+SQL ETL codebase. Supported stakeholders with data analysis dashboards and
+alerts.
+Machine Learning Research Intern, SINC GmbH, Wiesbaden, Germany
+Details: Developed ML-based fraud detection software for German health insurance providers.
+
+3
+
+Teaching Experience
+Fall 2023
+
+Teaching Assistant, Artificial Intelligence (CS76)
+Dartmouth College, Department of Computer Science (Instructor: Devin Balkcom)
+
+Fall 2023
+
+Individual Tutor, Introduction to Linear Models (MATH50)
+Facilitated by the Peer Tutoring Program, Dartmouth College, Department of Mathematics (Instructor: Ethan Levien)
+
+Winter 2023
+
+Teaching Assistant, Machine Learning and Statistical Data Analysis (CS74)
+Dartmouth College, Department of Computer Science (Instructor: Soroush
+Vosoughi)
+
+Winter 2023
+
+Individual Tutor, Data Visualization (QSS17)
+Facilitated by the Peer Tutoring Program, Dartmouth College, Program in Quantitative Social Sciences (Instructor: Robert Cooper)
+
+Activities and Service
+2025
+2025
+2024 – Present
+2023
+2023 – 2024
+2023 – 2024
+2022
+
+Ad Hoc Reviewer, Cognitive Computational Neuroscience conference
+Volunteer, Brown Brain Fair
+Member, Diversity & Inclusion Action Plan (DIAP) subcommittee on Department
+Culture & Climate
+Facilitator, DALI Lab community data science workshops
+Undergraduate Advisor
+Participant, Dartmouth Directed Reading Program (Topics: Group Theory and Lie
+Algebra; Bayesian Inference and MCMC)
+Lead Developer, Dartmouth TAMID Tech Track
+
+Professional Associations
+Association for the Advancement of Artificial Intelligence
+Cognitive Neuroscience Society
+Cognitive Science Society
+Organization for Computational Neuroscience
+Phi Beta Kappa
+Sigma Xi
+
+Skills
+Computational: Python (incl. Scikit-Learn, PyTorch, TensorFlow, OpenCV, PsychoPy), R (incl. Tidyverse), SQL, Java, Docker, Git, Bash, HPC
+Laboratory: EEG trained, fMRI trained
+
+Last updated: April 14, 2025
+
+4
+
+

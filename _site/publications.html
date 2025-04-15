@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications - Daniel L. Carstensen</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel L. Carstensen</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+            
+            <a class="site-title" href="/">Daniel Carstensen</a>
+            
+            
+            <div class="menu-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="site-nav" id="siteNav">
+                <div class="trigger">
+                    <a class="page-link" href="/">Home</a>
+                    <a class="page-link" href="/publications">Publications</a>
+                    <a class="page-link" href="/cv">CV</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menuIcon');
+            const siteNav = document.getElementById('siteNav');
+            
+            menuIcon.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event bubbling
+                this.classList.toggle('active');
+                siteNav.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!menuIcon.contains(event.target) && !siteNav.contains(event.target)) {
+                    menuIcon.classList.remove('active');
+                    siteNav.classList.remove('active');
+                }
+            });
+            
+            // Prevent clicks inside the menu from closing it
+            siteNav.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>
+  
+  <main class="page-content">
+    <div class="wrapper">
+      <h1 id="publications--presentations">Publications &amp; Presentations</h1>
+
+<h2 id="conference-presentations--posters">Conference Presentations &amp; Posters</h2>
+
+<ul>
+  <li>
+    <p>Carstensen, D. L., Frankland, S. M., &amp; Favila, S. E. (Apr 2025). <strong>Generalization Gradients in Deep Vision Models: Insights from Shepard’s Universal Law of Generalization</strong>. Poster at Cognitive Neuroscience Society, Boston, MA.</p>
+  </li>
+  <li>
+    <p>Carstensen, D. L., Manning, J. R., &amp; Mucha, P. (May 2024). <strong>Translating Neurophysiological Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning</strong>. Poster at Wetterhahn Science Symposium.</p>
+  </li>
+  <li>
+    <p>Jha, K., Carstensen, D. L., Patel, A., &amp; Manning, J. R. (May 2023). <strong>Translating Neurophysiological Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning</strong>. Poster at Wetterhahn Science Symposium.</p>
+  </li>
+</ul>
+
+<h2 id="invited-talks">Invited Talks</h2>
+
+<ul>
+  <li><strong>Lab meeting (PI: Thomas Serre)</strong> (2025). Brown University, Providence, RI.</li>
+</ul>
+
+<h2 id="current-research-projects">Current Research Projects</h2>
+
+<ul>
+  <li>
+    <p><strong>Generalization Gradients in Deep Vision Models</strong>: Investigating the adherence of DNN embedding spaces to Shepard’s universal law of generalization using large-scale naturalistic image datasets. (Brown University, Favila Lab)</p>
+  </li>
+  <li>
+    <p><strong>EEG-based Conceptual Knowledge Estimation</strong>: Using EEG to dynamically estimate conceptual knowledge during learning. (Dartmouth College, Contextual Dynamics Lab)</p>
+  </li>
+</ul>
+
+    </div>
+  </main>
+  
+  <!-- This is the footer section of the website. It includes copyright information and any additional links. -->
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <p>Daniel L. Carstensen<br />
+        Brown University<br />
+        Cognitive and Psychological Sciences<br />
+        190 Thayer Street, Providence, RI 02912, USA<br />
+        <a href="mailto:daniel_carstensen@brown.edu">daniel_carstensen@brown.edu</a>
+        </p>
+    </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Daniel L. Carstensen. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
