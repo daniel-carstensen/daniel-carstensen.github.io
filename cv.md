@@ -42,4 +42,4 @@ title: CV
 <br>
 
 You can also download my CV directly:
-<a href="/assets/pdf/cv.pdf" class="cv-download-link">PDF<i class="fas fa-download"></i></a>
+<a href="/assets/pdf/cv.pdf" class="cv-download-link" target="_blank" rel="noopener noreferrer">PDF<i class="fas fa-download"></i></a>

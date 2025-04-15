@@ -70,6 +70,10 @@ body {
   padding-left: 30px;
 }
 
+li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 /* Header */
 .site-header {
   border-bottom: 1px solid var(--header-border);
@@ -378,6 +382,23 @@ a:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
+}
+
+/* Publication download icon styling */
+.publications-list a .fas,
+.publications-list a .fa-download {
+  color: #000 !important; /* Black by default with !important to override any other styling */
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .publications-list a .fas,
+[data-theme="dark"] .publications-list a .fa-download {
+  color: #fff !important; /* White in dark mode */
+}
+
+.publications-list a:hover .fas,
+.publications-list a:hover .fa-download {
+  color: var(--link-color) !important; /* Changes to theme link color on hover */
 }
 
 /* Footer */
