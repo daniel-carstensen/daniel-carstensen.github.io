@@ -278,11 +278,12 @@ ul, ol {
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
+  color: var(--text-color);
+  text-decoration: underline;
 }
 
 a:hover {
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 

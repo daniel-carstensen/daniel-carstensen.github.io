@@ -8,7 +8,7 @@ title: About
 
 <div class="content-layout">
   <div class="main-content">
-    <p>Hello! I am a researcher at the intersection of cognitive science, neuroscience, and machine learning. Currently, I am working as a Lab Manager and Research Assistant at the Favila Lab at Brown University, where I investigate how deep neural network embedding spaces align with Shepard's universal law of generalization.</p>
+    <p>Hello! I am a researcher at the intersection of cognitive science, neuroscience, and machine learning. Currently, I am working as a Lab Manager and Research Assistant at the <a href="https://sites.brown.edu/favila-lab/">Favila Lab</a> at Brown University, where I investigate how deep neural network embedding spaces align with Shepard's universal law of generalization.</p>
     
     <p>My research focuses on:</p>
     <ul>

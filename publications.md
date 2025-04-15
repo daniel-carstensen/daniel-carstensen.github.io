@@ -25,7 +25,7 @@ title: Publications
 ## Current Research Projects
 
 <ul class="publications-list">
-<li><strong>Generalization Gradients in Deep Vision Models</strong>: Investigating the adherence of DNN embedding spaces to Shepard's universal law of generalization using large-scale naturalistic image datasets. (Brown University, Favila Lab)</li>
+<li><strong>Generalization Gradients in Deep Vision Models</strong>: Investigating the adherence of DNN embedding spaces to Shepard's universal law of generalization using large-scale naturalistic image datasets. (Favila Lab, Brown University and Mind, Brain, & Computation Lab, Dartmouth College)</li>
 
-<li><strong>EEG-based Conceptual Knowledge Estimation</strong>: Using EEG to dynamically estimate conceptual knowledge during learning. (Dartmouth College, Contextual Dynamics Lab)</li>
+<li><strong>EEG-based Conceptual Knowledge Estimation</strong>: Using EEG to dynamically estimate conceptual knowledge during learning. (Contextual Dynamics Lab, Dartmouth College)</li>
 </ul>
