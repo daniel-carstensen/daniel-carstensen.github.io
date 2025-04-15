@@ -450,6 +450,14 @@ a:hover {
   border-color: var(--card-border);
 }
 
+/* Desktop active page link */
+@media screen and (min-width: 601px) {
+  .page-link.active {
+    font-weight: bold;
+    color: var(--link-color);
+  }
+}
+
 /* Responsive design */
 @media screen and (max-width: 600px) {
   .site-header {
@@ -543,12 +551,10 @@ a:hover {
     border-bottom: none;
   }
   
-  /* Active page indicator */
+  /* Active page indicator - changed to bold text */
   .page-link.active {
+    font-weight: bold;
     color: var(--link-color);
-    border-left: 3px solid var(--link-color);
-    background-color: rgba(74, 144, 226, 0.05);
-    padding-left: 12px;
   }
   
   .page-link:hover {
@@ -558,7 +564,7 @@ a:hover {
   
   /* Don't shift active link on hover */
   .page-link.active:hover {
-    padding-left: 12px;
+    padding-left: 15px;
   }
   
   .footer-col-wrapper {
