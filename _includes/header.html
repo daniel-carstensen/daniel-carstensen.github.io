@@ -16,16 +16,18 @@
             {% endif %}
             
             <div class="menu-icon" id="menuIcon">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="burger-wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             
             <nav class="site-nav" id="siteNav">
                 <div class="trigger">
-                    <a class="page-link" href="/">Home</a>
-                    <a class="page-link" href="/publications">Publications</a>
-                    <a class="page-link" href="/cv">CV</a>
+                    <a class="page-link{% if page.url == '/' %} active{% endif %}" href="/" data-page="home">Home</a>
+                    <a class="page-link{% if page.url contains 'publications' %} active{% endif %}" href="/publications" data-page="publications">Publications</a>
+                    <a class="page-link{% if page.url contains 'cv' %} active{% endif %}" href="/cv" data-page="cv">CV</a>
                 </div>
             </nav>
         </div>
@@ -35,6 +37,23 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menuIcon');
             const siteNav = document.getElementById('siteNav');
+            
+            // Set active link based on current URL
+            const currentPath = window.location.pathname;
+            const pageLinks = document.querySelectorAll('.page-link');
+            
+            pageLinks.forEach(link => {
+                // Clear any Jekyll-based active classes that might be wrong
+                if ((currentPath.includes('publications') && link.dataset.page === 'publications') || 
+                    (currentPath.includes('cv') && link.dataset.page === 'cv') ||
+                    (currentPath === '/' && link.dataset.page === 'home')) {
+                    link.classList.add('active');
+                } else if (!((currentPath.includes('publications') && link.dataset.page !== 'publications') || 
+                            (currentPath.includes('cv') && link.dataset.page !== 'cv') ||
+                            (currentPath === '/' && link.dataset.page !== 'home'))) {
+                    link.classList.remove('active');
+                }
+            });
             
             menuIcon.addEventListener('click', function(e) {
                 e.stopPropagation(); // Prevent event bubbling

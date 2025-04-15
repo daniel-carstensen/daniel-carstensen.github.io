@@ -29,7 +29,7 @@ title: CV
 </style>
 
 <div class="pdf-container">
-    <iframe src="/assets/pdf/cv.pdf#view=FitH&toolbar=0&navpanes=0&zoom=50" height="100%" width="100%" title="Daniel Carstensen CV"></iframe>
+    <iframe src="https://docs.google.com/viewer?url=https://danielcarstensen.com/assets/pdf/cv.pdf&embedded=true" title="Daniel Carstensen CV"></iframe>
 </div>
 
 <br>

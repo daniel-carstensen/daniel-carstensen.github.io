@@ -66,20 +66,43 @@ body {
   top: 12px;
   right: 15px;
   z-index: 10;
+  width: 30px;
+  height: 20px;
+}
+
+/* Hamburger menu animation */
+.menu-icon .burger-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-icon span {
   display: block;
-  width: 25px;
+  width: 100%;
   height: 2px;
   background: #333;
-  margin-bottom: 5px;
-  transition: all 0.3s;
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  border-radius: 2px;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 9px;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 18px;
 }
 
 /* Hamburger icon animation */
 .menu-icon.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translateY(12px);
+  background-color: #4a90e2;
 }
 
 .menu-icon.active span:nth-child(2) {
@@ -87,7 +110,8 @@ body {
 }
 
 .menu-icon.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translateY(-12px);
+  background-color: #4a90e2;
 }
 
 .mobile-menu-open .site-nav {
@@ -223,20 +247,49 @@ a:hover {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform-origin: top right;
+    transform: scale(0.8);
   }
   
   .site-nav.active {
-    max-height: 200px;
+    max-height: 300px;
     opacity: 1;
     visibility: visible;
-    padding: 10px; /* Removed the top padding that was for the close button */
+    padding: 10px;
+    transform: scale(1);
   }
   
   .page-link {
     display: block;
-    margin: 10px 0;
-    padding: 5px 10px;
+    margin: 0;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .page-link:last-child {
+    border-bottom: none;
+  }
+  
+  /* Active page indicator */
+  .page-link.active {
+    color: #4a90e2;
+    border-left: 3px solid #4a90e2;
+    background-color: rgba(74, 144, 226, 0.05);
+    padding-left: 12px;
+  }
+  
+  .page-link:hover {
+    background-color: #f8f8f8;
+    padding-left: 20px;
+  }
+  
+  /* Don't shift active link on hover */
+  .page-link.active:hover {
+    padding-left: 12px;
   }
   
   .footer-col-wrapper {
@@ -272,5 +325,38 @@ a:hover {
   
   .portrait {
     max-width: 60%;
+  }
+
+  /* Animation for menu items */
+  @keyframes menuItemFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .site-nav.active .page-link {
+    animation: menuItemFadeIn 0.4s forwards;
+    opacity: 0;
+  }
+
+  .site-nav.active .page-link:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .site-nav.active .page-link:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .site-nav.active .page-link:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .site-nav.active .page-link:nth-child(4) {
+    animation-delay: 0.4s;
   }
 }
