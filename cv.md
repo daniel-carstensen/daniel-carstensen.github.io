@@ -9,7 +9,7 @@ title: CV
 .pdf-container {
     position: relative;
     width: 100%;
-    height: 842px; /* Height of an A4 page at 96 DPI (roughly equivalent to one full page) */
+    height: 1055px; /* Height of an A4 page at 96 DPI (roughly equivalent to one full page) */
     overflow: hidden;
     border: 1px solid #ccc;
 }

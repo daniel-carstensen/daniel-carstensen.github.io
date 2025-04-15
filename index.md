@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: About
 ---
 <div class="heading-container">
   <h1>Daniel Carstensen</h1>
