@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Publications - Daniel L. Carstensen</title>
+  <meta name="color-scheme" content="light dark">
+  <title>Publications - Daniel Carstensen</title>
   <!-- Add Google Fonts - Noto Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel L. Carstensen</title>
+    <meta name="color-scheme" content="light dark">
+    <title>Daniel Carstensen</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -28,6 +30,12 @@
             
             <a class="site-title" href="/">Daniel Carstensen</a>
             
+            
+            <!-- Mobile theme toggle (outside of menu) -->
+            <button id="themeToggleMobile" class="theme-toggle-mobile" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
             
             <div class="menu-icon" id="menuIcon">
                 <div class="burger-wrapper">
@@ -42,6 +50,11 @@
                     <a class="page-link" href="/" data-page="home">About</a>
                     <a class="page-link active" href="/publications" data-page="publications">Publications</a>
                     <a class="page-link" href="/cv" data-page="cv">CV</a>
+                    <!-- Desktop theme toggle (inside the nav menu) -->
+                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -51,6 +64,61 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menuIcon');
             const siteNav = document.getElementById('siteNav');
+            const themeToggle = document.getElementById('themeToggle');
+            const themeToggleMobile = document.getElementById('themeToggleMobile');
+            
+            // Theme management
+            function getPreferredTheme() {
+                // Check if user has explicitly set theme
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    return savedTheme;
+                }
+                // Otherwise use system preference
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateThemeIcons(theme);
+            }
+            
+            function updateThemeIcons(theme) {
+                if (theme === 'dark') {
+                    themeToggle.classList.add('dark');
+                    themeToggleMobile.classList.add('dark');
+                } else {
+                    themeToggle.classList.remove('dark');
+                    themeToggleMobile.classList.remove('dark');
+                }
+            }
+            
+            // Initial theme setup
+            const currentTheme = getPreferredTheme();
+            setTheme(currentTheme);
+            
+            // Listen for theme toggle clicks (desktop)
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+            
+            // Listen for theme toggle clicks (mobile)
+            themeToggleMobile.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                // Only update if user hasn't manually set a preference
+                if (!localStorage.getItem('theme')) {
+                    setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
             
             // Set active link based on current URL
             const currentPath = window.location.pathname;

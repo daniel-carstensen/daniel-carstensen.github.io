@@ -1,12 +1,65 @@
+/* Theme variables */
+:root {
+  /* Light theme (default) */
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --heading-color: #333;
+  --link-color: #2a7ae2;
+  --link-hover-color: #4a90e2;
+  --header-bg: #fff;
+  --header-border: #e8e8e8;
+  --menu-hover-bg: #f8f8f8;
+  --footer-bg: #f8f8f8;
+  --footer-border: #e8e8e8;
+  --footer-text: #666;
+  --card-bg: #fff;
+  --card-border: #e8e8e8;
+  --social-icon-bg: #f8f8f8;
+  --social-icon-color: #333;
+  --code-bg: #eef;
+  --burger-color: #333;
+  --button-bg: #f0f0f0;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --heading-color: #f0f0f0;
+  --link-color: #64b5f6;
+  --link-hover-color: #90caf9;
+  --header-bg: #1e1e1e;
+  --header-border: #333;
+  --menu-hover-bg: #2d2d2d;
+  --footer-bg: #1e1e1e;
+  --footer-border: #333;
+  --footer-text: #a0a0a0;
+  --card-bg: #1e1e1e;
+  --card-border: #333;
+  --social-icon-bg: #2d2d2d;
+  --social-icon-color: #e0e0e0;
+  --code-bg: #2d2d2d;
+  --burger-color: #e0e0e0;
+  --button-bg: #2d2d2d;
+}
+
+/* Ensure smooth theme transitions for all elements */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
 /* Base styles */
 body {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
+  background-color: var(--bg-color);
 }
 
 .wrapper {
@@ -19,9 +72,9 @@ body {
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--header-border);
   padding: 15px 0;
-  background-color: #fff;
+  background-color: var(--header-bg);
   height: 40px; /* Set a fixed height for the header */
 }
 
@@ -30,7 +83,7 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   line-height: 40px;
   display: inline-block;
 }
@@ -40,21 +93,104 @@ body {
   display: inline-block;
 }
 
+/* Theme toggle button - updated for inline nav positioning */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: 40px;
+  padding: 0;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: transparent;
+  position: relative;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  line-height: 40px; /* Match the line-height of header elements */
+  transform: translateY(-1px); /* Fine-tune vertical alignment */
+}
+
+.theme-toggle-btn:hover {
+  color: var(--link-hover-color);
+}
+
+/* Fix icon visibility */
+.theme-toggle-btn i,
+.theme-toggle-mobile i {
+  font-size: 1.2rem;
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide by default */
+}
+
+/* Show the appropriate icon based on theme */
+.theme-toggle-btn .fa-moon,
+.theme-toggle-mobile .fa-moon {
+  display: block; /* Show moon by default (light theme) */
+}
+
+.theme-toggle-btn.dark .fa-sun,
+.theme-toggle-mobile.dark .fa-sun {
+  display: block; /* Show sun in dark theme */
+}
+
+.theme-toggle-btn.dark .fa-moon,
+.theme-toggle-mobile.dark .fa-moon {
+  display: none; /* Hide moon in dark theme */
+}
+
+/* Mobile theme toggle - hidden by default on desktop */
+.theme-toggle-mobile {
+  display: none; /* Hide on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: var(--text-color);
+  font-size: 1.2rem; /* Match font size to header text */
+  padding: 0;
+  width: 30px;
+  height: 40px; /* Match height to header height */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  line-height: 40px; /* Match the line-height of header elements */
+}
+
+/* Remove the old theme toggle styles */
+.theme-toggle {
+  display: none;
+}
+
+#themeToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
 .site-nav {
   float: right;
   line-height: 40px;
 }
 
 .page-link {
-  color: #333; /* Changed from blue to standard font color */
+  color: var(--text-color);
   text-decoration: none;
   margin-left: 20px;
-  transition: color 0.2s ease; /* Added smooth transition */
+  transition: color 0.2s ease;
 }
 
 .page-link:hover {
-  color: #4a90e2; /* Changed to a slightly blueish tone */
-  text-decoration: none; /* Removed underline on hover for cleaner look */
+  color: var(--link-hover-color);
+  text-decoration: none;
 }
 
 /* Mobile Menu */
@@ -81,7 +217,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background: #333;
+  background: var(--burger-color);
   position: absolute;
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   border-radius: 2px;
@@ -102,7 +238,7 @@ body {
 /* Hamburger icon animation */
 .menu-icon.active span:nth-child(1) {
   transform: rotate(45deg) translateY(12px);
-  background-color: #4a90e2;
+  background-color: var(--link-color);
 }
 
 .menu-icon.active span:nth-child(2) {
@@ -111,7 +247,7 @@ body {
 
 .menu-icon.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-12px);
-  background-color: #4a90e2;
+  background-color: var(--link-color);
 }
 
 .mobile-menu-open .site-nav {
@@ -125,11 +261,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--heading-color);
 }
 
 h1 {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--header-border);
   padding-bottom: 10px;
 }
 
@@ -138,12 +274,38 @@ ul, ol {
 }
 
 a {
-  color: #2a7ae2;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* CV download link */
+.cv-download-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.cv-download-link:hover {
+  background-color: var(--link-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.cv-download-link .fa-download {
+  margin-left: 8px;
 }
 
 /* Portrait styles */
@@ -180,6 +342,12 @@ a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  transition: filter 0.3s ease;
+}
+
+/* Slightly adjust portrait brightness in dark mode */
+[data-theme="dark"] .portrait {
+  filter: brightness(0.95);
 }
 
 /* Social Icons */
@@ -197,15 +365,15 @@ a:hover {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: var(--social-icon-bg);
+  color: var(--social-icon-color);
   font-size: 18px;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  background-color: #2a7ae2;
+  background-color: var(--link-color);
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -214,9 +382,9 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--footer-border);
   padding: 30px 0;
-  background-color: #f8f8f8;
+  background-color: var(--footer-bg);
 }
 
 .footer-col-wrapper {
@@ -249,16 +417,28 @@ a:hover {
 
 .copyright {
   font-size: 14px;
-  color: #666;
-  border-top: 1px solid #e8e8e8;
+  color: var(--footer-text);
+  border-top: 1px solid var(--footer-border);
   padding-top: 15px;
   text-align: center;
+}
+
+/* PDF container in dark mode */
+[data-theme="dark"] .pdf-container {
+  border-color: var(--card-border);
 }
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
   .site-header {
     position: relative;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    right: 65px;
+    top: 7px;
+    margin: 0;
   }
   
   .menu-icon {
@@ -269,8 +449,8 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
-    border: 1px solid #e8e8e8;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
     border-radius: 5px;
     text-align: right;
     width: 150px;
@@ -298,25 +478,26 @@ a:hover {
     margin: 0;
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--card-border);
     position: relative;
     transition: all 0.3s ease;
   }
 
-  .page-link:last-child {
+  /* Last navigation item shouldn't have a border */
+  .page-link:last-of-type {
     border-bottom: none;
   }
   
   /* Active page indicator */
   .page-link.active {
-    color: #4a90e2;
-    border-left: 3px solid #4a90e2;
+    color: var(--link-color);
+    border-left: 3px solid var(--link-color);
     background-color: rgba(74, 144, 226, 0.05);
     padding-left: 12px;
   }
   
   .page-link:hover {
-    background-color: #f8f8f8;
+    background-color: var(--menu-hover-bg);
     padding-left: 20px;
   }
   
@@ -395,5 +576,28 @@ a:hover {
 
   .site-nav.active .page-link:nth-child(4) {
     animation-delay: 0.4s;
+  }
+
+  /* Mobile theme toggle adjustments */
+  .theme-toggle-btn {
+    display: none !important; /* Use !important to ensure it's hidden */
+  }
+
+  .theme-toggle-mobile {
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 5;
+  }
+
+  .theme-toggle-mobile:hover {
+    color: var(--link-hover-color);
+  }
+
+  /* Adjust site title position to accommodate the toggle */
+  .site-title {
+    margin-left: 40px;
   }
 }

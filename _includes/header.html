@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
@@ -14,6 +15,12 @@
             {% else %}
             <a class="site-title empty-title" href="/"></a>
             {% endif %}
+            
+            <!-- Mobile theme toggle (outside of menu) -->
+            <button id="themeToggleMobile" class="theme-toggle-mobile" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
             
             <div class="menu-icon" id="menuIcon">
                 <div class="burger-wrapper">
@@ -28,6 +35,11 @@
                     <a class="page-link{% if page.url == '/' %} active{% endif %}" href="/" data-page="home">About</a>
                     <a class="page-link{% if page.url contains 'publications' %} active{% endif %}" href="/publications" data-page="publications">Publications</a>
                     <a class="page-link{% if page.url contains 'cv' %} active{% endif %}" href="/cv" data-page="cv">CV</a>
+                    <!-- Desktop theme toggle (inside the nav menu) -->
+                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -37,6 +49,61 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menuIcon');
             const siteNav = document.getElementById('siteNav');
+            const themeToggle = document.getElementById('themeToggle');
+            const themeToggleMobile = document.getElementById('themeToggleMobile');
+            
+            // Theme management
+            function getPreferredTheme() {
+                // Check if user has explicitly set theme
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    return savedTheme;
+                }
+                // Otherwise use system preference
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateThemeIcons(theme);
+            }
+            
+            function updateThemeIcons(theme) {
+                if (theme === 'dark') {
+                    themeToggle.classList.add('dark');
+                    themeToggleMobile.classList.add('dark');
+                } else {
+                    themeToggle.classList.remove('dark');
+                    themeToggleMobile.classList.remove('dark');
+                }
+            }
+            
+            // Initial theme setup
+            const currentTheme = getPreferredTheme();
+            setTheme(currentTheme);
+            
+            // Listen for theme toggle clicks (desktop)
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+            
+            // Listen for theme toggle clicks (mobile)
+            themeToggleMobile.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                // Only update if user hasn't manually set a preference
+                if (!localStorage.getItem('theme')) {
+                    setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
             
             // Set active link based on current URL
             const currentPath = window.location.pathname;
