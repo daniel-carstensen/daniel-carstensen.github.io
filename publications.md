@@ -8,7 +8,8 @@ title: Publications
 
 ## Conference Presentations & Posters
 
-* **Carstensen, D. L.**, †Frankland, S. M., & †Favila, S. E. (Apr 2025). Generalization Gradients in Deep Vision Models: Insights from Shepard's Universal Law of Generalization. Poster at Cognitive Neuroscience Society, Boston, MA.
+* **Carstensen, D. L.**, †Frankland, S. M., & †Favila, S. E. (Apr 2025). Generalization Gradients in Deep Vision Models: Insights from Shepard's Universal Law of Generalization. Poster at Cognitive Neuroscience Society, Boston, MA.\
+[[PDF]](https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/0/659/files/2025/04/Carstensen_CNS_2025.pdf)
 
 * **Carstensen, D. L.**, Manning, J. R., & Mucha, P. (May 2024). Translating Neurophysiological Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning. Poster at Wetterhahn Science Symposium.
 
