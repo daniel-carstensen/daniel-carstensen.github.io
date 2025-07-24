@@ -8,7 +8,7 @@ title: Publications
 
 ## Peer-Reviewed Conference Proceedings
 <ul class="publications-list">
-<li><strong>Carstensen, D. L.</strong>, †Favila, S. E., & †Frankland, S. M. (2025). Deep Vision Models Follow Shepard's Universal Law of Generalization. Proceedings of the 47th Annual Meeting of the Cognitive Science Societ. <a href="https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/0/659/files/2025/07/Carstensen_CogSci_2025.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+<li><strong>Carstensen, D. L.</strong>, †Favila, S. E., & †Frankland, S. M. (2025). Deep Vision Models Follow Shepard's Universal Law of Generalization. Proceedings of the 47th Annual Meeting of the Cognitive Science Society. <a href="https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/0/659/files/2025/07/Carstensen_CogSci_2025.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 </ul>
 
 ## Conference Presentations & Posters
