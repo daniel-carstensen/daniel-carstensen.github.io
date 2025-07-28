@@ -14,7 +14,7 @@ title: Publications
 ## Conference Presentations & Posters
 
 <ul class="publications-list">
-<li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (2025). Evidence for Shepard's Law in the Representational Spaces of Deep Vision Models. Poster at Cognitive Computational Neuroscience, Amsterdam, NL. <a href="https://2025.ccneuro.org/poster/?id=00wBZOPWef" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://2025.ccneuro.org/abstract_pdf/Carstensen_2025_Evidence_Shepards_Law_Representational_Spaces_Deep.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+<li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Aug 2025). Evidence for Shepard's Law in the Representational Spaces of Deep Vision Models. Poster at Cognitive Computational Neuroscience, Amsterdam, NL. <a href="https://2025.ccneuro.org/poster/?id=00wBZOPWef" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://2025.ccneuro.org/abstract_pdf/Carstensen_2025_Evidence_Shepards_Law_Representational_Spaces_Deep.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
 <li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Apr 2025). Generalization Gradients in Deep Vision Models: Insights from Shepard's Universal Law of Generalization. Poster at Cognitive Neuroscience Society, Boston, MA. <a href="https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/0/659/files/2025/04/Carstensen_CNS_2025.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
