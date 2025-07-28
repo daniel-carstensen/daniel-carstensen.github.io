@@ -26,6 +26,7 @@ title: About
     <img src="/assets/images/carstensen_current_comp.jpeg" alt="Daniel Carstensen" class="portrait">
     <div class="social-icons">
       <a href="mailto:daniel_carstensen@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=DOSYCWMAAAAJ" title="Googloe Scholar"><i class="fab fa-google-scholar"></i></a>
       <a href="https://github.com/daniel-carstensen" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://bsky.app/profile/daniel-carstensen.bsky.social" title="Bluesky"><i class="fab fa-bluesky"></i></a>
     </div>
