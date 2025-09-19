@@ -13,9 +13,9 @@ title: About
     <p>My research focuses on:</p>
     <ul>
       <li>Applying computational modeling, especially deep learning, to cognitive neuroscience</li>
-      <li>Understanding episodic memory and category learning</li>
+      <li>Understanding episodic memory and representation learning</li>
       <li>Examining how visual information processed in higher visual cortex regions supports memory</li>
-      <li>Exploring how the hippocampus organizes perceptually similar experiences into categories</li>
+      <li>Exploring how the hippocampus organizes and transforms perceptually similar experiences</li>
     </ul>
 
     <p>I use frameworks such as Shepard's universal law of generalization as tools to better understand these cognitive phenomena. Ultimately, my goal is to bridge insights from cognitive science, neuroscience, and artificial neural networks to clarify how the brain supports complex cognition.</p>
