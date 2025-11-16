@@ -8,7 +8,7 @@ title: Publications
 
 ## Unpublished Manuscripts
 <ul class="publications-list">
-<li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E., (2025). Deep Neural Network Representational Spaces Selectively Align with the Universal Law of Generalization (In preparation).</li>
+<li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (2025). Deep Neural Network Representational Spaces Selectively Align with the Universal Law of Generalization (In preparation).</li>
 </ul>
 
 ## Peer-Reviewed Conference Proceedings
