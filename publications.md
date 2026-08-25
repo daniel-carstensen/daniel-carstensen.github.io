@@ -22,9 +22,9 @@ title: Publications
 
 <li>Dang, K. M., Ferraz, M. T., <strong>Carstensen, D. L.</strong>, Favila, S. E., & Frankland, S. M. (Aug 2026). Evidence for Efficient Coding of Naturalistic Images in Visual Short-Term Memory. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=BBMki2WcSJ" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=BBMki2WcSJ" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
-<li>Sahay, N., <strong>Carstensen, D. L.</strong>, Frankland, S. M., & Favila, S. E. (Aug 2026). Aligning DNN Representational Spaces with Shepard's Law. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+<li>Sahay, N., <strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Aug 2026). Aligning DNN Representational Spaces with Shepard's Law. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
-<li>Son, J.-Y., <strong>Carstensen, D. L.</strong>, Sayette, A., & Favila, S. E. (Aug 2026). Multistep representation of social networks in LLMs. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+<li>†Son, J.-Y., †<strong>Carstensen, D. L.</strong>, Sayette, A., & Favila, S. E. (Aug 2026). Multistep representation of social networks in LLMs. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
 <li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Aug 2025). Evidence for Shepard's Law in the Representational Spaces of Deep Vision Models. Poster at Cognitive Computational Neuroscience, Amsterdam, NL. <a href="https://2025.ccneuro.org/poster/?id=00wBZOPWef" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://2025.ccneuro.org/abstract_pdf/Carstensen_2025_Evidence_Shepards_Law_Representational_Spaces_Deep.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
@@ -39,6 +39,7 @@ title: Publications
 ## Invited Talks
 
 <ul class="publications-list">
+<li>Lab meeting (PI: Michael Frank) (2026). Brown University, Providence, RI.</li>
 <li>Lab meeting (PI: Iris Groen) (2025). University of Amsterdam, Amsterdam, NL.</li>
 <li>Lab meeting (PI: Thomas Serre) (2025). Brown University, Providence, RI.</li>
 </ul>
