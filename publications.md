@@ -19,6 +19,13 @@ title: Publications
 ## Conference Presentations & Posters
 
 <ul class="publications-list">
+
+<li>Dang, K. M., Ferraz, M. T., <strong>Carstensen, D. L.</strong>, Favila, S. E., & Frankland, S. M. (Aug 2026). Evidence for Efficient Coding of Naturalistic Images in Visual Short-Term Memory. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=BBMki2WcSJ" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=BBMki2WcSJ" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+
+<li>Sahay, N., <strong>Carstensen, D. L.</strong>, Frankland, S. M., & Favila, S. E. (Aug 2026). Aligning DNN Representational Spaces with Shepard's Law. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=94dTfhFoMI" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+
+<li>Son, J.-Y., <strong>Carstensen, D. L.</strong>, Sayette, A., & Favila, S. E. (Aug 2026). Multistep representation of social networks in LLMs. Poster at Cognitive Computational Neuroscience, New York, NY. <a href="https://2026.ccneuro.org/poster/?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://openreview.net/pdf?id=tY8ysggNmT" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
+
 <li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Aug 2025). Evidence for Shepard's Law in the Representational Spaces of Deep Vision Models. Poster at Cognitive Computational Neuroscience, Amsterdam, NL. <a href="https://2025.ccneuro.org/poster/?id=00wBZOPWef" target="_blank" rel="noopener noreferrer"><i class="fas fa-window-restore"></i></a> <a href="https://2025.ccneuro.org/abstract_pdf/Carstensen_2025_Evidence_Shepards_Law_Representational_Spaces_Deep.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
 
 <li><strong>Carstensen, D. L.</strong>, †Frankland, S. M., & †Favila, S. E. (Apr 2025). Generalization Gradients in Deep Vision Models: Insights from Shepard's Universal Law of Generalization. Poster at Cognitive Neuroscience Society, Boston, MA. <a href="https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/0/659/files/2025/04/Carstensen_CNS_2025.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a></li>
@@ -26,6 +33,7 @@ title: Publications
 <li><strong>Carstensen, D. L.</strong>, Manning, J. R., & Mucha, P. (May 2024). Translating Neurophysiological Recordings Into Dynamic Estimates of Conceptual Knowledge and Learning. Poster at Wetterhahn Science Symposium.</li>
 
 <li>†Jha, K., †<strong>Carstensen, D. L.</strong>, Patel, A., & Manning, J. R. (May 2023). Exploring high-order network dynamics in brains and stock markets. Poster at Wetterhahn Science Symposium.</li>
+
 </ul>
 
 ## Invited Talks
