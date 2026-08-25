@@ -8,7 +8,7 @@ title: About
 
 <div class="content-layout">
   <div class="main-content">
-    <p>Hello! I am a researcher at the intersection of cognitive science, neuroscience, and machine learning. Currently, I am working as a Lab Manager and Research Assistant at the <a href="https://sites.brown.edu/favila-lab/">Favila Lab</a> at Brown University, where I investigate how deep neural network embedding spaces align with Shepard's universal law of generalization.</p>
+    <p>Hello! I am a researcher at the intersection of cognitive science, neuroscience, and machine learning. Currently, I am a graduate student in the <a href="https://schapirolab.org">Penn Computational Cognitive Neuroscience Lab</a> at the University of Pennsylvania. Previously, I was working as a Lab Manager and Research Assistant at the <a href="https://sites.brown.edu/favila-lab/">Favila Lab</a> at Brown University, where I investigated how deep neural network embedding spaces align with Shepard's universal law of generalization.</p>
     
     <p>My research focuses on:</p>
     <ul>
@@ -26,7 +26,7 @@ title: About
     <img src="/assets/images/carstensen_current_comp.jpeg" alt="Daniel Carstensen" class="portrait">
     <div class="social-icons">
       <a href="mailto:daniel_carstensen@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://scholar.google.com/citations?user=DOSYCWMAAAAJ" title="Googloe Scholar"><i class="fab fa-google-scholar"></i></a>
+      <a href="https://scholar.google.com/citations?user=DOSYCWMAAAAJ" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
       <a href="https://github.com/daniel-carstensen" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://bsky.app/profile/daniel-carstensen.bsky.social" title="Bluesky"><i class="fab fa-bluesky"></i></a>
     </div>
